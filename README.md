@@ -15,6 +15,6 @@ This is a simple template for developing Go applications. It includes a Makefile
 ### GitHub
 - [ ] Import the `ruleset.json` as a branch protection rule in your GitHub repository settings.
   - [ ] Delete the `ruleset.json` file after importing.
-- Enable `Allow auto-merge` in the general settings of your GitHub repository.
-- Enable `Automatically delete head branches` in the general settings of your GitHub repository.
+- [ ] Enable `Allow auto-merge` in the general settings of your GitHub repository.
+- [ ] Enable `Automatically delete head branches` in the general settings of your GitHub repository.
 
