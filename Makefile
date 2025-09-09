@@ -13,14 +13,14 @@ qa: analyze test
 
 analyze:
 	@go vet
-	@go run honnef.co/go/tools/cmd/staticcheck@latest --checks=all
+	@go tool staticcheck --checks=all
 
 test:
 	@go test -failfast -cover ./...
-	
+
 
 .PHONY: clean \
-				build \ 
-				qa \ 
-				analyze \ 
+				build \
+				qa \
+				analyze \
 				test
