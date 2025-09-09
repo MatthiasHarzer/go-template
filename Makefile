@@ -24,4 +24,3 @@ test:
 				qa \ 
 				analyze \ 
 				test
-				 
