@@ -11,8 +11,3 @@
 
 # Build directory
 build/
-
-# UI
-# ui/dist/
-# !ui/dist/.gitkeep
-# ui/node_modules/
