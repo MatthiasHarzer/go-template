@@ -5,6 +5,7 @@ This is a simple template for developing Go applications. It includes a Makefile
 <br>
 
 ## Todos after cloning
+- [ ] Import the `ruleset.json` as a branch protection rule in your GitHub repository settings.
 - [ ] Update `OUTPUT_NAME` in `Makefile` to your desired binary name.
 - [ ] Update the `module` in `go.mod` to your project's module path.
 - [ ] Update the copyright year and name in `LICENSE`.
