@@ -47,6 +47,10 @@
           {
             "context": "QA (windows-latest)",
             "integration_id": 15368
+          },
+          {
+            "context": "Lint PR title",
+            "integration_id": 15368
           }
         ]
       }
