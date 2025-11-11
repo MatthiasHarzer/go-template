@@ -41,7 +41,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v5
         with:
-          fetch-depth: "0"
+          fetch-depth: 0
       - name: Use Go
         uses: actions/setup-go@v6
         with:
@@ -50,16 +50,13 @@ jobs:
         run: |
           make qa
       - name: Create new version
-        if: ${{ needs.get-next-version.outputs.hasNextVersion == 'true' }}
         run: |
           git tag v${{needs.get-next-version.outputs.version}}
           git push origin v${{needs.get-next-version.outputs.version}}
       - name: Build artifacts
-        if: ${{ needs.get-next-version.outputs.hasNextVersion == 'true' }}
         run: |
           make build BUILD_VERSION=${{ needs.get-next-version.outputs.version }}
       - name: Release new version
-        if: ${{ needs.get-next-version.outputs.hasNextVersion == 'true' }}
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/*"
